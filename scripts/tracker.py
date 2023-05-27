@@ -583,7 +583,7 @@ class Tracker(cc.Calibration):
         result = False              # Holds the value for function return
 
         # Check if old epoch has no old value
-        if self.__old_epoch is 0:
+        if self.__old_epoch == 0:
 
             # Send time now to old epoch
             self.__old_epoch = time_now
